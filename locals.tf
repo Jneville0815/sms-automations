@@ -1,8 +1,3 @@
-variable "repository_name" {
-  type    = string
-  default = "sms-automations"
-}
-
 locals {
   global = {
     repository_name = var.repository_name

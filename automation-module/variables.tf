@@ -10,7 +10,11 @@ variable "function_description" {
   type = string
 }
 
-variable "function_cron_job" {
+variable "function_cron_name" {
+  type = string
+}
+
+variable "function_cron_arn" {
   type = string
 }
 

@@ -26,5 +26,5 @@ resource "aws_lambda_permission" "lambda" {
   function_name = aws_lambda_function.lambda.function_name
   statement_id  = "AllowExecutionFromCloudWatch"
   principal     = "events.amazonaws.com"
-  source_arn    = aws_cloudwatch_event_rule.lambda.arn
+  source_arn    = var.function_cron_arn
 }
